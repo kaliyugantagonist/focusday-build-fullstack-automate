@@ -2,6 +2,19 @@
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description":"A template for running a build",
     "Parameters": {
+        "Parameters": {
+    "gitHubCloneURL": {
+        "Description": "The clone URL of the GitHub repo",
+        "Type": "String"
+    },
+    "codeBuildImage": {
+        "Description": "The image to use when running code bulid, e.g. aws/codebuild/java:openjdk-8",
+        "Type": "String",
+        "Default":"aws/codebuild/java:openjdk-8"
+    }
+
+}
+
     },
     "Resources": {
     }
